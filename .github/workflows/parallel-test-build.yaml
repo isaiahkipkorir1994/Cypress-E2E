@@ -13,7 +13,7 @@ jobs:
          command: npm run test:addtoCart
 
      - name: Cypress Test Report
-       uses: actions/upload-artifact@v3
+       uses: actions/upload-artifact@v4
        with: 
          name: Mochawesome HTML report-register Flow
          path: cypress/reports/html
@@ -29,7 +29,7 @@ jobs:
        with:
          command: npm run test:registerTest
      - name: Cypress Test Report
-       uses: actions/upload-artifact@v3
+       uses: actions/upload-artifact@v4
        with: 
          name: Mochawesome HTML report-addtoCart
          path: cypress/reports/html
