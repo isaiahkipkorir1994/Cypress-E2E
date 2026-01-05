@@ -1,6 +1,6 @@
     //create a class and export to allow import from other classes
 export class registerPage{
-     //create an pbject
+     //create an object
     weblocators={
 //inside the object pass locators in key value pair
         fName:'#input-firstname',
@@ -17,9 +17,9 @@ export class registerPage{
         //pass the key ie URI
         cy.visit(Cypress.env('URI'))
     }
-    enterFirstName(firstName)
+    enterFirstName(fName)
     {
-        cy.get(this.weblocators.fName).type(firstName)
+        cy.get(this.weblocators.fName).type(fName)
     }
 
     enterLName(lName){
