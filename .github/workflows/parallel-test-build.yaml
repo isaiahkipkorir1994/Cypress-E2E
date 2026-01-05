@@ -11,9 +11,7 @@ jobs:
        uses: cypress-io/github-action@v4
        with:
          command: npm run test:addtoCart
-name: register Test build
-on: [push]
-jobs:
+
  reg-Flow run:
    runs-on: ubuntu-latest
    steps:
