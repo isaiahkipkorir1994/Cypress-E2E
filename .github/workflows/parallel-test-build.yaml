@@ -1,0 +1,26 @@
+name: Browser test Build
+on: [push]
+jobs:
+ Parallel-Test run:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v2
+ 
+     - name: Run Cypress Test
+       uses: cypress-io/github-action@v4
+       with:
+         command: npm run test:addtoCart
+name: register Test build
+on: [push]
+jobs:
+ reg-Flow run:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v2
+ 
+     - name: Run Cypress Test
+       uses: cypress-io/github-action@v4
+       with:
+         command: npm run test:registerTest	 
