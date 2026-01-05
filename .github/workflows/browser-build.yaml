@@ -1,0 +1,13 @@
+name: Browser Tests Build
+on: [push]
+jobs:
+ Cypress-Test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v2
+ 
+     - name: Run Cypress Test
+       uses: cypress-io/github-action@v4
+       with:
+         browser: chrome
