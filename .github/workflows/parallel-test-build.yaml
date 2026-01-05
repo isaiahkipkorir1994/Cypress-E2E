@@ -1,7 +1,7 @@
 name: Browser test Build
 on: [push]
 jobs:
- Parallel-Test run:
+ Parallel-Test:
    runs-on: ubuntu-latest
    steps:
      - name: Checkout GitCode
@@ -12,7 +12,7 @@ jobs:
        with:
          command: npm run test:addtoCart
 
- reg-Flow run:
+ reg-Flow:
    runs-on: ubuntu-latest
    steps:
      - name: Checkout GitCode
